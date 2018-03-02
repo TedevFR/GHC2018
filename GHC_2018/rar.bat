@@ -1,0 +1,2 @@
+cd "C:\Users\asus\Dropbox\Projets\Challenge\Google Hash code\GHC_2018\GHC2018\GHC_2018"
+"C:\Program Files\WinRAR\WinRAR.exe" a -afzip "C:\Users\asus\Dropbox\Projets\Challenge\Google Hash code\GHC_2018\GHC2018\GHC_2018\bin\Debug\Outputs\Code.zip" Code
