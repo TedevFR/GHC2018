@@ -26,8 +26,8 @@
 
             // Si le trajet peut etre fini avant la fin de la simu
             // ou si le trajet peut etre fini avant la fin du ride
-            if ((endRideStep > problemData.NumberOfSteps)
-                || (endRideStep > RideLatestFinish))
+            if ((endRideStep >= problemData.NumberOfSteps)
+                || (endRideStep >= RideLatestFinish))
             {
                 MagicNumber = 0;
                 return;

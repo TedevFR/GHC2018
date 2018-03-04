@@ -63,10 +63,10 @@ namespace GHC_2018
             ride.GotBonus = BonusCalculator.CalculateBonus(car, ride, _problemData.PerRideBonus) > 0;
 
             car.Rides.Add(ride);
+            car.OccupiedUntil = StepCalculator.CalculateStepAfterRide(car, ride);
             car.CurrentColumn = ride.RideFinishColumn;
             car.CurrentRow = ride.RideFinishRow;
 
-            car.OccupiedUntil = StepCalculator.CalculateStepAfterRide(car, ride);
             
             _problemData.RidesToDo.Remove(ride);
         }
@@ -100,7 +100,7 @@ namespace GHC_2018
 
             Console.WriteLine(_inputFilePath);
             Console.WriteLine($"{score} points");
-            Console.WriteLine($"{nbRide} rides for {_problemData.NumberOfVehicles} cars");
+            Console.WriteLine($"{nbRide}/{_problemData.NumberOfRides} rides done with {_problemData.NumberOfVehicles} cars");
             Console.WriteLine($"{nbRide/(float)_problemData.NumberOfVehicles} rides per car");
             Console.WriteLine(string.Empty);
         }

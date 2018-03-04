@@ -30,7 +30,7 @@ namespace GHC_2018.Code
 
         private static void Solve(string inputFilePathExample, string outputFilePathExample)
         {
-            Solver solver = new Solver(inputFilePathExample, outputFilePathExample);
+            var solver = new Solver(inputFilePathExample, outputFilePathExample);
             solver.Solve();
         }
     }
